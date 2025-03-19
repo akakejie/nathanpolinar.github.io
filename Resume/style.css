@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Proxima Nova', Arial, sans-serif; /* Changed to Proxima Nova */
+    background-color: #212A31;
+    color: #D3D9D4;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* Changed to Georgia for headings */
+}
+
+p, ul, ol, a {
+    font-family: 'Proxima Nova', Arial, sans-serif; /* Ensures body text uses Proxima Nova */
+}
+
+header {
+    background-color: #2E3944;
+    padding: 15px 20px;
+}
+
+p {
+    font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #D3D9D4;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+a.active, a:hover {
+    opacity: 1;
+    color: white;
+    border-bottom: 2px solid #00AEEF; /* Adds a bottom border on hover or active */
+    padding-bottom: 3px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #2E3944;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif; /* Ensures sidebar headings use Georgia */
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: 'Georgia', serif; /* Ensures sidebar headings use Georgia */
+}
+
+.sidebar ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+.content {
+    flex: 1;
+    margin-left: 20px;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+.resume-section {
+    background-color: #2E3944;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+.resume-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif; /* Ensures section headings use Georgia */
+}
+
+.resume-section p, .resume-section ul, .resume-section ol {
+    font-family: 'Proxima Nova', Arial, sans-serif; /* Ensures section content uses Proxima Nova */
+}
+
+.navigation-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+.go-top {
+    background-color: #2E3944;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.go-top:hover {
+    color: #124E66;
+}
+
+a:hover {
+    color: #748D92;
+}
+
+.profile-header {
+    display: flex; /* Aligns image and name horizontally */
+    align-items: center; /* Centers them vertically */
+    gap: 15px; /* Spacing between image and name */
+}
+
+.profile-img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 10px; /* Space between images */
+    margin-top: 10px;
+    width: 100%; /* Ensures the grid fits within the sidebar */
+}
+
+.image-grid img {
+    width: 100%; /* Full width of the grid column */
+    height: 100px; /* Fixed height for uniform size */
+    border-radius: 5px; /* Rounded corners */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}

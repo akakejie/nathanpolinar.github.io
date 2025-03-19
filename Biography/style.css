@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #212A31;
+    color: #D3D9D4;
+}
+
+h1 {
+    font-family: 'Georgia', serif; 
+    font-size: 24px;
+    margin-bottom: 5px; 
+}
+
+p {
+    font-family: 'Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: #2E3944;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #D3D9D4;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+a.active, a:hover {
+    opacity: 1;
+    color: #D3D9D4;
+    border-bottom: 2px solid #00AEEF; 
+    padding-bottom: 3px;
+}
+
+.bio-nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: #D3D9D4;
+}
+
+.bio-section {
+    background-color: #2E3944;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.bio-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.tabs a:hover, .tabs a.active {
+    opacity: 1;
+    border-bottom: 2px solid #00AEEF;
+    padding-bottom: 3px;
+}
+
+.go-top {
+    margin-top: 30px; /* Adjusted margin to lower the button */
+    color: #9FA6AD;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #6c757d; /* Changed background color to gray */
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+    display: inline-block; /* Ensure it doesn't overlay images */
+}
+
+.go-top:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+    color: white;
+}
+
+.navigation-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navigation-links a {
+    background-color: #6c757d; /* Changed background color to gray */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.navigation-links a:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 10px; /* Space between images */
+    margin-top: 20px;
+}
+
+.image-grid a {
+    text-decoration: none; /* Removes underline from links */
+}
+
+.image-grid img {
+    width: 100%; /* Full width of the grid column */
+    height: 250px; /* Fixed height for uniform size */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over images */
+}

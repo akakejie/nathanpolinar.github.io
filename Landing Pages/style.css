@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: ' Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #212A31;
+    color: #D3D9D4;
+}
+
+/* Fix profile picture being cut */
+.cover-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #000;
+    overflow: visible; /* Allow the profile image to overflow */
+}
+
+.cover-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-pic {
+    position: absolute;
+    bottom: -60px; /* Moves the image 60px below the cover */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #212A31;
+    background-color: #212A31;
+}
+
+/* Profile Info */
+.profile-info {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.profile-info h1 {
+    font-family: 'Georgia', serif; /* Changed to a good serif font */
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #D3D9D4;
+}
+
+/* Navigation Bar */
+.profile-nav {
+    background-color: #2E3944;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.profile-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-nav li {
+    margin: 0 15px;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: #D3D9D4;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.profile-nav a.active {
+    border-bottom: 3px solid #41a2c9;
+    color: #41a2c9;
+}
+
+.profile-nav a:hover {
+    border-bottom: 3px solid #41a2c9;
+}
+
+/* About Section */
+.about {
+    background-color: #2E3944;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Georgia', serif; /* Changed to a good serif font */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-family: ' Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6; /* Adjusted spacing */
+    margin-top: 10px;
+}

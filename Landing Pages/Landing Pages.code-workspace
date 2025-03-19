@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Media"
+		},
+		{
+			"path": "../Photo Gallery"
+		},
+		{
+			"path": "../Resume"
+		},
+		{
+			"path": "../Skills"
+		},
+		{
+			"path": "../Biography"
+		},
+		{
+			"path": "../Contact"
+		}
+	]
+}

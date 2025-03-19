@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #212A31;
+    color: #D3D9D4;
+}
+
+h1 {
+    font-family: 'Georgia', serif; 
+    font-size: 24px;
+    margin-bottom: 5px; 
+}
+
+p {
+    font-family: 'Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: #2E3944;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #D3D9D4;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #D3D9D4;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+a.active, a:hover {
+    opacity: 1;
+    color: #D3D9D4;
+    border-bottom: 2px solid #00AEEF; /* Added border-bottom on hover */
+}
+
+.bio-nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: #D3D9D4;
+}
+
+.bio-section {
+    background-color: #2E3944;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.bio-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.tabs a:hover, .tabs a.active {
+    opacity: 1;
+    border-bottom: 2px solid #00AEEF;
+    padding-bottom: 3px;
+}
+
+.contact-card {
+    width: 350px;
+    background: #2E3944;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-section {
+    background-color: #2E3944;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.contact-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    gap: 20px; /* Space between items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background: #212A31;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #D3D9D4;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    transition: background 0.3s ease;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 15px; /* Adds spacing between the icon and text */
+}
+
+.contact-item:hover {
+    background: #3A4754; /* Slightly lighter background on hover */
+}
+
+.contact-item a {
+    color: #D3D9D4;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.facebook {
+    background: #212A31;
+    font-family: ' Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.instagram {
+    background:  #212A31;
+    font-family: ' Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.email {
+    background:  #212A31;
+    font-family: ' Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.phone {
+    background:  #212A31;
+    font-family: ' Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.go-top {
+    margin-top: 50px; /* Increased margin to lower the button */
+    color: #9FA6AD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.go-top:hover {
+    color: #124E66;
+}
+
+.navigation-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.go-top {
+    background-color: #2E3944;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
