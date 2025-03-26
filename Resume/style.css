@@ -23,7 +23,7 @@ p {
     font-family: 'Proxima Nova', Arial, sans-serif;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +60,7 @@ a.active, a:hover {
     padding-bottom: 3px;
 }
 
+/* Container Layout */
 .container {
     display: flex;
     max-width: 1200px;
@@ -74,23 +75,10 @@ a.active, a:hover {
     border-radius: 8px;
 }
 
-.sidebar h2 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.sidebar h2, .sidebar h3 {
     font-family: 'Georgia', serif; /* Ensures sidebar headings use Georgia */
-}
-
-.sidebar p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    font-family: 'Proxima Nova', Arial, sans-serif;
-}
-
-.sidebar h3 {
     font-size: 18px;
-    margin-top: 20px;
-    font-family: 'Georgia', serif; /* Ensures sidebar headings use Georgia */
+    margin-bottom: 10px;
 }
 
 .sidebar ul {
@@ -98,6 +86,20 @@ a.active, a:hover {
     padding-left: 20px;
     font-size: 14px;
     font-family: 'Proxima Nova', Arial, sans-serif;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px; /* Adjust the size as needed */
+    height: 120px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
 }
 
 .content {
@@ -122,6 +124,13 @@ a.active, a:hover {
 
 .resume-section p, .resume-section ul, .resume-section ol {
     font-family: 'Proxima Nova', Arial, sans-serif; /* Ensures section content uses Proxima Nova */
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.resume-section ul, .resume-section ol {
+    padding-left: 20px;
+    font-size: 14px;
 }
 
 .navigation-links {
@@ -134,8 +143,12 @@ a.active, a:hover {
     font-family: 'Proxima Nova', Arial, sans-serif;
 }
 
+/* Go Top Button */
 .go-top {
-    background-color: #2E3944;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6c757d;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -146,25 +159,11 @@ a.active, a:hover {
 }
 
 .go-top:hover {
-    color: #124E66;
+    background-color: #5a6268;
 }
 
 a:hover {
     color: #748D92;
-}
-
-.profile-header {
-    display: flex; /* Aligns image and name horizontally */
-    align-items: center; /* Centers them vertically */
-    gap: 15px; /* Spacing between image and name */
-}
-
-.profile-img {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
 }
 
 .image-grid {

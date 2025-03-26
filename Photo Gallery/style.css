@@ -107,11 +107,11 @@ header {
     opacity: 1; /* Show description on hover */
 }
 
-/* Go Top and Go Home Buttons */
-.go-top, .go-home {
-    position: fixed; /* Fixes the buttons to the viewport */
-    bottom: 20px; /* Positions the buttons 20px from the bottom */
-    right: 20px; /* Positions the buttons 20px from the right */
+/* Go Top Button */
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     color: #D3D9D4;
     text-decoration: none;
     font-weight: bold;
@@ -120,15 +120,9 @@ header {
     border-radius: 5px;
     font-size: 14px;
     transition: background 0.3s ease, color 0.3s ease;
-    display: inline-block;
-    margin-bottom: 10px; /* Adds spacing between the two buttons */
 }
 
-.go-home {
-    margin-bottom: 50px; /* Adds extra spacing above the "Go Top" button */
-}
-
-.go-top:hover, .go-home:hover {
-    background-color: #3A4754; /* Slightly lighter background on hover */
-    color: #00AEEF; /* Changes text color on hover */
+.go-top:hover {
+    background-color: #3A4754;
+    color: #00AEEF;
 }

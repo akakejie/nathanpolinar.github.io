@@ -182,3 +182,49 @@ footer a {
 footer a:hover {
     background-color: #5a6268;
 }
+
+/* Song Image Styling */
+.song-image {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image fits within the container */
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Song Description Styling */
+.song-description {
+    font-size: 14px;
+    color: #D3D9D4;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Video Description Styling */
+.video-description {
+    font-size: 14px;
+    color: #D3D9D4;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Go Top Button */
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #D3D9D4;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2E3944;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.go-top:hover {
+    background-color: #3A4754;
+    color: #00AEEF;
+}
