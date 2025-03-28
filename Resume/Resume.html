@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biography</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,27 +14,29 @@
                 <li><a href="../Landing Pages/index.html">Home</a></li>
                 <li><a href="../Biography/Biography.html">Biography</a></li>
                 <li><a href="../Skills/Skills.html">Skills</a></li>
-                <li><a href="#" class="active" >Resume</a></li>
+                <li><a href="#" class="active">Resume</a></li>
                 <li><a href="../Photo Gallery/PhotoGallery.html">Photo Gallery</a></li>
                 <li><a href="../Media/Media.html">Media</a></li>
-
+                <li><a href="../Destination/Destination.html">Destinations</a></li>
+                <li><a href="../BucketList/BucketList.html">Bucket List</a></li>
                 <li><a href="../Contact/Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
 
     <div class="container">
+        <!-- Sidebar -->
         <aside class="sidebar">
             <div class="profile-header">
-                <a href="1x1.jpg" target="_self">
-                <img src="1x1.jpg" alt="Nathan M. Polinar" class="profile-img" >
+                <a href="1x1.jpg" target="image-viewer">
+                    <img src="1x1.jpg" alt="Nathan M. Polinar" class="profile-img">
                 </a>
                 <h2>Nathan M. Polinar</h2>
             </div>
-            
-            <p>09948959417</p>
-            <p><a href="mailto:polinar.nathan@ue.edu.ph">polinar.nathan@ue.edu.ph</a></p>
+            <p class="contact-info">
+                <strong>Phone:</strong> 09948959417<br>
+                <strong>Email:</strong> <a href="mailto:polinar.nathan@ue.edu.ph">polinar.nathan@ue.edu.ph</a>
+            </p>
 
             <h3>Education</h3>
             <ul>
@@ -63,6 +65,7 @@
             </ul>
         </aside>
 
+        <!-- Main Content -->
         <main class="content">
             <section class="resume-section">
                 <h2>About Me</h2>
@@ -76,9 +79,9 @@
             <section class="resume-section">
                 <h2>Work Experience</h2>
                 <ul>
-                    <li>Otto Shoes – Sales (2015)</li>
-                    <li>Online Selling (2020)</li>
-                    <li>CGI Philippine – Intern (2023)</li>
+                    <li><strong>Otto Shoes – Sales (2015):</strong> Assisted customers and managed inventory.</li>
+                    <li><strong>Online Selling (2020):</strong> Managed an online store and handled customer inquiries.</li>
+                    <li><strong>CGI Philippines – Intern (2023):</strong> Gained hands-on experience in IT operations and support.</li>
                 </ul>
             </section>
 
@@ -87,18 +90,14 @@
                 <ul>
                     <li>Gaming</li>
                     <li>Coding</li>
-                    <li>Programming Interest</li>
-                    <li>CyberSecurity Interest</li>
-                    <li>Webpage Developing Interest</li>
-                </ul>
-                <ul>
-                    <li>Reading Tech Blogs</li>
+                    <li>Cybersecurity</li>
+                    <li>Web Development</li>
                     <li>Exploring New Technologies</li>
                     <li>Participating in Hackathons</li>
-                    <li>Learning New Programming Languages</li>
-                    <li>Collaborating on Open Source Projects</li>
                 </ul>
+            </section>
 
+            <section class="resume-section">
                 <h2>Achievements</h2>
                 <ol>
                     <li>Graduated with Honors from Taguig Integrated School</li>
@@ -110,10 +109,9 @@
             </section>
         </main>
     </div>
+
     <div class="navigation-links">
-        <a href="#" class="go-top" onclick="goTop()">Go Top</a>
-        <a href="../Landing Pages/index.html" class="go-top">Back to Home</a>
+        <a href="#" class="go-top">Go Top</a>
     </div>
-    
 </body>
 </html>

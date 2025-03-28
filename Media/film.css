@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    background-color: #212A31;
+    color: #D3D9D4;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2E3944;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: white;
+}
+
+.profile-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-nav li {
+    margin: 0 3px;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: #D3D9D4;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.profile-nav a.active, .profile-nav a:hover {
+    opacity: 1;
+    color: #D3D9D4;
+    border-bottom: 2px solid #00AEEF;
+    padding-bottom: 3px;
+}
+
+/* Film Container */
+.film-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.film-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif; /* Change font family to Georgia */
+
+}
+
+/* Video Section */
+section {
+    margin-bottom: 40px;
+    
+}
+
+/* Center Section Titles and Descriptions */
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+    font-family: 'Georgia', serif; /* Change font family to Georgia */
+
+    
+}
+
+section p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #B0BEC5;
+    text-align: center; /* Center the description */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+li.responsive-video {
+    flex: 1 1 calc(50% - 20px); /* Two videos per row */
+    box-sizing: border-box;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+li p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #D3D9D4;
+}
+
+.video-description {
+    font-size: 0.9em;
+    color: #B0BEC5;
+}
+
+/* Go Top Button */
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #D3D9D4;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2E3944;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.go-top:hover {
+    background-color: #3A4754;
+    color: #00AEEF;
+}
+
+/* Go Back Button */
+.go-back {
+    position: fixed;
+    bottom: 60px; /* Positioned above the Go Top button */
+    right: 20px;
+    color: #D3D9D4;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2E3944;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.go-back:hover {
+    background-color: #3A4754;
+    color: #00AEEF;
+}

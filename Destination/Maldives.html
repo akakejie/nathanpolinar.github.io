@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maldives</title>
-    <link rel="stylesheet" href="Maldives.css">
+    <link rel="stylesheet" href="places.css">
 </head>
 <body>
     <header>
@@ -12,7 +12,13 @@
             <div class="logo">Maldives</div>
             <ul>
                 <li><a href="../Landing Pages/index.html">Home</a></li>
+                <li><a href="../Biography/Biography.html">Biography</a></li>
+                <li><a href="../Skills/Skills.html">Skills</a></li>
+                <li><a href="../Resume/Resume.html">Resume</a></li>
+                <li><a href="../Photo Gallery/PhotoGallery.html">Photo Gallery</a></li>
+                <li><a href="../Media/Media.html">Media</a></li>
                 <li><a href="../Destination/Destination.html" class="active">Destinations</a></li>
+                <li><a href="../BucketList/BucketList.html">Bucket List</a></li>
                 <li><a href="../Contact/Contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -22,44 +28,85 @@
         <h1>Welcome to Maldives</h1>
         <section class="sceneries">
             <h2>Sceneries</h2>
-            <div class="images">
-                <img src="../Images/maldives1.jpg" alt="Maldives Beach" class="scenery-image">
-                <img src="../Images/maldives2.jpg" alt="Overwater Villas" class="scenery-image">
-                <img src="../Images/maldives3.jpg" alt="Sunset in Maldives" class="scenery-image">
+            <div class="image-grid">
+                <div class="image-item">
+                    <a href="maldives1.jpg" target="image-viewer">
+                        <img src="maldives1.jpg" alt="Maldives Beach" title="Maldives Beach">
+                    </a>
+                    <div class="image-description">Maldives Beach</div>
+                </div>
+                <div class="image-item">
+                    <a href="maldives2.jpg" target="image-viewer">
+                        <img src="maldives2.jpg" alt="Overwater Villas" title="Overwater Villas">
+                    </a>
+                    <div class="image-description">Overwater Villas</div>
+                </div>
+                <div class="image-item">
+                    <a href="maldives3.jpg" target="image-viewer">
+                        <img src="maldives3.jpg" alt="Sunset in Maldives" title="Sunset in Maldives">
+                    </a>
+                    <div class="image-description">Sunset in Maldives</div>
+                </div>
             </div>
         </section>
 
         <section class="discussion">
-            <h2>Why Maldives is Special to Me</h2>
+            <h2>Why Maldives is Special to Me?</h2>
             <p>
                 The Maldives is a tropical paradise known for its crystal-clear waters, white sandy beaches, and luxurious overwater villas. 
                 For me, the Maldives is special because it offers a serene escape from the hustle and bustle of daily life. 
                 The breathtaking sunsets and vibrant marine life make it a truly unforgettable destination.
             </p>
+            <p>
+                The Maldives is also special to me because of its unique underwater experiences, such as snorkeling and diving among colorful coral reefs. 
+                I dream of staying in an overwater villa, waking up to the sound of waves, and enjoying the peaceful beauty of the islands. 
+                Exploring the local culture and cuisine would make the experience even more enriching.
+            </p>
         </section>
 
         <section class="how-to-get-there">
-            <h2>How to Get There</h2>
+            <h2>How to Get There?</h2>
             <p>
-                The Maldives is accessible via Velana International Airport (MLE) in Malé. 
-                From there, you can take a speedboat or seaplane transfer to your resort. 
-                Many resorts offer private transfers to ensure a seamless travel experience.
+                From the Philippines, you can fly to the Maldives via connecting flights offered by airlines such as Philippine Airlines, Singapore Airlines, and Qatar Airways. 
+                Flights typically connect through cities like Singapore, Doha, or Kuala Lumpur before arriving at Velana International Airport (MLE) in Malé.
+            </p>
+            <p>
+                Once in Malé, you can take a speedboat or seaplane transfer to your resort. Many resorts offer private transfers to ensure a seamless travel experience.
             </p>
         </section>
 
         <section class="other-places">
             <h2>Other Places to Visit in Maldives</h2>
-            <ul>
-                <li>Malé - The capital city with vibrant markets and cultural landmarks.</li>
-                <li>Maafushi - A local island offering budget-friendly accommodations.</li>
-                <li>Vaadhoo Island - Famous for its glowing bioluminescent beaches.</li>
-                <li>Addu Atoll - Known for its unique culture and stunning diving spots.</li>
-            </ul>
+            <div class="places">
+                <div class="place">
+                    <a href="male.jpg" target="image-viewer">
+                        <img src="male.jpg" alt="Malé" class="place-image">
+                    </a>
+                    <p><strong>Malé</strong> - The capital city with vibrant markets and cultural landmarks.</p>
+                </div>
+                <div class="place">
+                    <a href="maafushi.jpg" target="image-viewer">
+                        <img src="maafushi.jpg" alt="Maafushi" class="place-image">
+                    </a>
+                    <p><strong>Maafushi</strong> - A local island offering budget-friendly accommodations.</p>
+                </div>
+                <div class="place">
+                    <a href="vaadhoo.jpg" target="image-viewer">
+                        <img src="vaadhoo.jpg" alt="Vaadhoo Island" class="place-image">
+                    </a>
+                    <p><strong>Vaadhoo Island</strong> - Famous for its glowing bioluminescent beaches.</p>
+                </div>
+                <div class="place">
+                    <a href="addu-atoll.jpg" target="image-viewer">
+                        <img src="addu-atoll.jpg" alt="Addu Atoll" class="place-image">
+                    </a>
+                    <p><strong>Addu Atoll</strong> - Known for its unique culture and stunning diving spots.</p>
+                </div>
+            </div>
         </section>
     </main>
+      <a href="Destination.html" class="go-back">Go Back</a>
 
-    <footer>
-        <p>&copy; 2025 Maldives Travel Guide. All rights reserved.</p>
-    </footer>
+        <a href="#" class="go-top">Go Top</a>
 </body>
 </html>

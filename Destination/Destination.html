@@ -18,27 +18,34 @@
                 <li><a href="../Resume/Resume.html">Resume</a></li>
                 <li><a href="../Photo Gallery/PhotoGallery.html">Photo Gallery</a></li>
                 <li><a href="../Media/Media.html">Media</a></li>
-                <li><a href="#" class="active">Destination</a></li>
+                <li><a href="#" class="active">Destinations</a></li>
+                <li><a href="../BucketList/BucketList.html">Bucket List</a></li>
                 <li><a href="../Contact/Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Destination Content -->
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <h1>Welcome to My Destination Page</h1>
+        <p>Explore some of the most beautiful and exciting places around the world that I dream of visiting. Click on the map below to learn more about each destination!</p>
+    </section>
+
+    <!-- Destination Map -->
     <div class="destination-container">
-        <img src="destination.jpg" alt="Destination Map" usemap="#destination-map" class="destination-image">
-        <main class="main-content">
-            <div class="content-wrapper">
-              <div class="feature-card">
-                <img
-                  src="../IMAGES/ImageMap.png" alt="Dream Places to visit" title="Places" class="feature-image"
+        <img 
+            src="destination.jpg" 
+            alt="Dream Places to Visit" 
+            usemap="#ImageMap" 
+            class="destination-image"/>
 
-                  usemap="#ImageMap" width="2000" height="1600" />
-
-                  <map name="ImageMap">
-                    <area shape="poly" coords="156, 160, 453, 159, 605, 416,459, 670, 155, 670, 8, 418" href= "Japan.html" />
-
-    
+        <map name="ImageMap">
+            <area shape="rect" coords="57, 60, 398, 275" href="NewYork.html" alt="New York" title="New York">
+            <area shape="rect" coords="308, 475, 608, 661" href="Bali.html" alt="Bali" title="Bali">
+            <area shape="circle" coords="686, 176, 192" href="Japan.html" alt="Japan" title="Japan">
+            <area shape="poly" coords="67, 386, 67, 632, 247, 631, 247, 387" href="Maldives.html" alt="Maldives" title="Maldives">
+            <area shape="poly" coords="680, 437, 680, 681, 866, 681, 866, 437" href="Switzerland.html" alt="Switzerland" title="Switzerland">
+        </map>
     </div>
 </body>
 </html>

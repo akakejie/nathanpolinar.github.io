@@ -28,9 +28,11 @@ nav {
 }
 
 .logo {
+    font-family: 'Georgia', serif; /* Changed font to Georgia */
     font-size: 1.5em;
     font-weight: bold;
-    color: #D3D9D4;
+    color: white;
+
 }
 
 ul {

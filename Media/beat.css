@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    background-color: #212A31;
+    color: #D3D9D4;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2E3944;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: white;
+}
+
+.profile-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-nav li {
+    margin: 0 15px;
+}
+
+.profile-nav a {
+    text-decoration: none;
+    color: #D3D9D4;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.profile-nav a.active, .profile-nav a:hover {
+    opacity: 1;
+    color: #D3D9D4;
+    border-bottom: 2px solid #00AEEF;
+    padding-bottom: 3px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #D3D9D4; /* Changed to a lighter color for better visibility */
+}
+h2{
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center; /* Center the heading */
+
+}
+
+p{
+    font-family: 'Proxima Nova', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #D3D9D4; /* Changed to a lighter color for better visibility */
+    text-align: center; /* Center the paragraph text */ 
+}
+/* Song Collection Section */
+.song-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between song cards */
+    margin-top: 20px;
+}
+
+.song-card {
+    flex: 1 1 calc(33.333% - 20px); /* Three cards per row with spacing */
+    box-sizing: border-box;
+    background-color: #2E3944;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.song-card img {
+    width: 100%;
+    height: 250px; /* Increased height for larger images */
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.song-card audio {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.song-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #00AEEF;
+}
+
+.song-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #D3D9D4;
+}
+
+.song-card .song-description {
+    font-size: 0.9em;
+    color: #B0BEC5;
+}
+
+/* Go Top Button */
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #D3D9D4;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2E3944;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.go-top:hover {
+    background-color: #3A4754;
+    color: #00AEEF;
+}
+
+/* Go Back Button */
+.go-back {
+    position: fixed;
+    bottom: 60px; /* Positioned above the Go Top button */
+    right: 20px;
+    color: #D3D9D4;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2E3944;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.go-back:hover {
+    background-color: #3A4754;
+    color: #00AEEF;
+}

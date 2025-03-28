@@ -32,6 +32,7 @@ nav {
     font-size: 1.5em;
     font-weight: bold;
     color: white;
+    font-family: 'Georgia', serif; /* Changed font to Georgia */
 }
 
 ul {
@@ -67,9 +68,30 @@ a.active, a:hover {
 
 /* Destination Image */
 .destination-image {
-    max-width: 90%;
+    max-width: 50%;
     height: auto;
     border: 4px solid #2E3944;
     border-radius: 15px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.welcome-section h1 {
+    font-size: 2em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1em;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    color: #D3D9D4;
 }

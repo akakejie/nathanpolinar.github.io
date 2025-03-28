@@ -30,6 +30,9 @@ nav {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: white;
+
 }
 
 ul {
@@ -89,7 +92,9 @@ a.active, a:hover {
     padding-bottom: 3px;
 }
 
+/* Content Box */
 .content-box {
+    position: relative; /* Ensures the go-top button is positioned relative to this container */
     background-color: #2E3944;
     padding: 20px;
     border-radius: 8px;
@@ -103,21 +108,24 @@ a.active, a:hover {
     margin-bottom: 10px;
 }
 
+/* Go Top Button */
 .go-top {
-    margin-top: 30px; /* Adjusted margin to lower the button */
+    position: absolute; /* Position the button relative to its container */
+    bottom: 20px; /* 20px from the bottom of the container */
+    right: 20px; /* 20px from the right of the container */
     color: #9FA6AD;
     text-decoration: none;
     font-weight: bold;
-    background-color: #6c757d; /* Changed background color to gray */
-    padding: 10px 20px; /* Adjusted padding */
+    background-color: #6c757d; /* Gray background */
+    padding: 10px 20px; /* Padding for the button */
     border-radius: 5px;
     font-size: 14px;
     transition: background 0.3s;
-    display: inline-block; /* Ensure it doesn't overlay images */
+    z-index: 10; /* Ensure it stays above other elements */
 }
 
 .go-top:hover {
-    background-color: #5a6268; /* Darker shade on hover */
+    background-color: #5a6268; /* Darker gray on hover */
     color: white;
 }
 
@@ -150,8 +158,9 @@ a.active, a:hover {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two images per row */
-    gap: 15px; /* Increased gap for better spacing */
+    gap: 10px; /* Space between images */
     margin-top: 20px;
+    margin-bottom: 60px; /* Increased space below the image grid */
 }
 
 .image-grid a {
@@ -160,9 +169,9 @@ a.active, a:hover {
 
 .image-grid img {
     width: 100%; /* Full width of the grid column */
-    height: 300px; /* Increased height for larger images */
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for better visibility */
+    height: 250px; /* Fixed height for uniform size */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
     object-fit: cover; /* Ensures the images cover the area without distortion */
     cursor: pointer; /* Changes the cursor to a pointer when hovering over images */
 }

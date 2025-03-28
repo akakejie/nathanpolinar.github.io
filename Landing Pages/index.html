@@ -8,40 +8,52 @@
 </head>
 <body>
 
-    <!-- Profile Header -->
-    <header>
-        <div class="cover-container">
-            <video class="cover-video" autoplay loop muted>
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <img src="image.jpg" alt="Profile Picture" class="profile-pic">
-        </div>
-        
-        <div class="profile-info">
-            <h1>Nathan Polinar</h1>
-            <p></p>
-        </div>
-
-        <!-- Navigation Tabs -->
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">My Website</div>
         <nav class="profile-nav">
             <ul>
-                <li><a href="#" class="active">Timeline</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="../Biography/Biography.html">Biography</a></li>
                 <li><a href="../Skills/Skills.html">Skills</a></li>
                 <li><a href="../Resume/Resume.html">Resume</a></li>
                 <li><a href="../Photo Gallery/PhotoGallery.html">Photo Gallery</a></li>
                 <li><a href="../Media/Media.html">Media</a></li>
-                <li><a href="../Destination/Destination.html">Contact</a></li>
+                <li><a href="../Destination/Destination.html">Destinations</a></li>
+                <li><a href="../BucketList/BucketList.html">Bucket List</a></li>
                 <li><a href="../Contact/Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <p>I am a 19-year-old aspiring software developer from Taguig City, currently pursuing a Bachelor of Science degree in Information Technology.</p>
-    </section>
+    <!-- Profile Header -->
+    <main>
 
+
+        
+        <div class="cover-container">
+            <div class="video-container">
+                <video class="cover-video" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+        </div>
+        
+        <!-- About Section -->
+        <section class="about">
+            <div class="about-container">
+                <div class="profile-pic-container">
+                    <a href="image.png" target="image-viewer">
+                    <img src="image.png" alt="Profile Picture" class="profile-pic">
+                    </a>
+                </div>
+                <div class="about-text">
+                    <h1>Nathan Polinar</h1>
+                    <p class="subtitle">Aspiring Software Developer</p>
+                    <p>I am a 20-year-old aspiring software developer from Taguig City, currently pursuing a Bachelor of Science degree in Information Technology.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

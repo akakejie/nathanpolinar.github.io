@@ -4,110 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Beat</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="beat.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="navbar">
             <div class="logo">My Beat</div>
+            <nav class="profile-nav">
             <ul>
                 <li><a href="../Landing Pages/index.html">Home</a></li>
+                <li><a href="../Biography/Biography.html">Biography</a></li>
+                <li><a href="../Skills/Skills.html">Skills</a></li>
+                <li><a href="../Resume/Resume.html">Resume</a></li>
+                <li><a href="../Photo Gallery/PhotoGallery.html">Photo Gallery</a></li>
                 <li><a href="Media.html">Media</a></li>
-                <li><a href="MyKindOfFilm.html">My Kind of Film</a></li>
+                <li><a href="../Destination/Destination.html">Destinations</a></li>
+                <li><a href="../BucketList/BucketList.html">Bucket List</a></li>
+                <li><a href="../Contact/Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="beat-container">
-        <h1>My Beat</h1>
+        <h1>My Beat - Song Collection</h1>
+        <!-- R&B Section -->
         <section>
             <h2>R&B</h2>
             <p>Relaxing and soulful R&B tracks that I love.</p>
-            <ul>
-                <li>
+            <div class="song-collection">
+                <div class="song-card">
+                    <a href="frank-ocean.jpeg" target="image-viewer">
+                        <img src="frank-ocean.jpeg" alt="Frank Ocean - Self-Control" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="R&B1-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: Frank Ocean - Song: Self-Control</p>
-                </li>
-                <li>
+                    <h3>Self-Control</h3>
+                    <p>Frank Ocean - Blond (2016)</p>
+                    <p class="song-description">A heartfelt track about vulnerability and longing.</p>
+                </div>
+                <div class="song-card">
+                    <a href="daniel-caesar.jpg" target="image-viewer">
+                        <img src="daniel-caesar.jpg" alt="Daniel Caesar - Streetcar" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="R&B2-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: Daniel Ceasar - Song: Streetcar</p>
-                </li>
-                <li>
+                    <h3>Streetcar</h3>
+                    <p>Daniel Caesar - Pilgrim's Paradise (2015)</p>
+                    <p class="song-description">A soulful cover of Kanye West's "Street Lights."</p>
+                </div>
+                <div class="song-card">
+                    <a href="leon-thomas.jpg" target="image-viewer">
+                        <img src="leon-thomas.jpg" alt="Leon Thomas - Mutt" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="R&B3-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: Leon Thomas - Song: Mutt</p>
-                </li>
-            </ul>
+                    <h3>Mutt</h3>
+                    <p>Leon Thomas - Mutt (2024)</p>
+                    <p class="song-description">A powerful track showcasing Leon's vocal range.</p>
+                </div>
+            </div>
         </section>
 
+        <!-- Rap Section -->
         <section>
             <h2>Rap</h2>
             <p>Fun and upbeat rap songs that I enjoy.</p>
-            <ul>
-                <li>
+            <div class="song-collection">
+                <div class="song-card">
+                    <a href="jcole.jpg" target="image-viewer">
+                    <img src="jcole.jpg" alt="J.Cole - Love Yourz" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="Rap1-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: J.Cole - Song: Love Yourz</p>
-                </li>
-                <li>
+                    <h3>Love Yourz</h3>
+                    <p>J.Cole - 2014 Forest Hills Drive (2014)</p>
+                    <p class="song-description">A motivational anthem about appreciating life.</p>
+                </div>
+                <div class="song-card">
+                    <a href="drake.jpg" target="image-viewer">
+                    <img src="drake.jpg" alt="Drake - You Broke My Heart" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="Rap2-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: Drake - Song: You Broke My Heart</p>
-                </li>
-                <li>
+                    <h3>You Broke My Heart</h3>
+                    <p>Drake - Certified Lover Boy (2021)</p>
+                    <p class="song-description">A reflective track about heartbreak and growth.</p>
+                </div>
+                <div class="song-card">
+                    <a href="kendrick-lamar.jpg" target="image-viewer">
+                    <img src="kendrick-lamar.jpg" alt="Kendrick Lamar - United In Grief" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="Rap3-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: Kendrick Lamar - Song: United In Grief</p>
-                </li>
-            </ul>
+                    <h3>United In Grief</h3>
+                    <p>Kendrick Lamar - Mr. Morale & The Big Steppers (2022)</p>
+                    <p class="song-description">A deep dive into grief and emotional healing.</p>
+                </div>
+            </div>
         </section>
 
+        <!-- Indie Pop Section -->
         <section>
             <h2>Indie Pop</h2>
             <p>Catchy melodies that make me happy.</p>
-            <ul>
-                <li>
+            <div class="song-collection">
+                <div class="song-card">
+                    <a href="niki.jpg" target="image-viewer">
+                    <img src="niki.jpg" alt="NIKI - La La Lost You" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="Indie1-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: NIKI - Song: La La Lost You</p>
-                </li>
-                <li>
+                    <h3>La La Lost You</h3>
+                    <p>NIKI - MOONCHILD (2020)</p>
+                    <p class="song-description">A bittersweet ballad about love and loss.</p>
+                </div>
+                <div class="song-card">
+                    <a href="clairo.jpg" target="image-viewer">
+                    <img src="clairo.jpg" alt="Clairo - Flaming Hot Cheetos" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="Indie2-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: Clairo - Song: Flaming Hot Cheetos</p>
-                </li>
-                <li>
+                    <h3>Flaming Hot Cheetos</h3>
+                    <p>Clairo - Diary 001 (2018)</p>
+                    <p class="song-description">A quirky and fun track with a nostalgic vibe.</p>
+                </div>
+                <div class="song-card">
+                    <a href="men-i-trust.jpg" target="image-viewer">
+                    <img src="men-i-trust.jpg" alt="Men I Trust - Show Me How" class="song-image">
+                    </a>
                     <audio controls>
                         <source src="Indie3-sample.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <p>Artist: Men I Trust - Song: Show Me How</p>
-                </li>
-            </ul>
+                    <h3>Show Me How</h3>
+                    <p>Men I Trust - Oncle Jazz (2019)</p>
+                    <p class="song-description">A dreamy and soothing indie pop masterpiece.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
+        <a href="Media.html" class="go-back">Go Back</a>
         <a href="#" class="go-top">Go Top</a>
-        <a href="../Landing Pages/index.html" class="go-home">Go Home</a>
     </footer>
 </body>
 </html>
