@@ -73,6 +73,8 @@ a.active, a:hover {
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
+    color: white;
+
 }
 
 a:hover {
